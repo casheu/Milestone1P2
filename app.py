@@ -12,7 +12,7 @@ with open('pipeline.pkl', 'rb') as file_1:
 
 # Load Sequential Model
 from tensorflow.keras.models import load_model
-model_seq = load_model('model.h5')
+model = load_model('model.h5')
 
 @app.route("/")
 def home():
